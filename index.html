@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte - Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🌱 Agro Forte</h1>
+                <p class="tagline">Futuro Sustentável</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#praticas">Práticas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SEÇÃO HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Agricultura Sustentável para um Mundo Melhor</h2>
+            <p>Transforme sua produção rural com práticas sustentáveis e tecnologia verde.</p>
+            <button class="btn-primary" onclick="scrollToSection('praticas')">Conheça nossas práticas</button>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre Agro Forte</h2>
+            <p>A Agro Forte é um movimento dedicado a transformar a agricultura brasileira em um modelo sustentável, que respeita o meio ambiente e garante a produtividade das gerações futuras.</p>
+            
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Preservação Ambiental</h3>
+                    <p>Mantemos a saúde do solo e dos recursos hídricos através de práticas ecológicas.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📈</div>
+                    <h3>Produtividade</h3>
+                    <p>Aumentamos a rendimento das culturas sem comprometer o ecossistema local.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💚</div>
+                    <h3>Responsabilidade Social</h3>
+                    <p>Apoiamos pequenos produtores e comunidades rurais na transição sustentável.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PRÁTICAS -->
+    <section id="praticas" class="praticas">
+        <div class="container">
+            <h2>Práticas Sustentáveis</h2>
+            
+            <div class="praticas-grid">
+                <div class="pratica-item">
+                    <h3>Rotação de Culturas</h3>
+                    <p>Alternar plantações para manter a fertilidade natural do solo e reduzir pragas.</p>
+                    <span class="badge">Essencial</span>
+                </div>
+                <div class="pratica-item">
+                    <h3>Compostagem Orgânica</h3>
+                    <p>Transformar resíduos agrícolas em fertilizante natural para suas lavouras.</p>
+                    <span class="badge">Importante</span>
+                </div>
+                <div class="pratica-item">
+                    <h3>Irrigação Eficiente</h3>
+                    <p>Sistemas de irrigação inteligentes que economizam água e energia.</p>
+                    <span class="badge">Tecnologia</span>
+                </div>
+                <div class="pratica-item">
+                    <h3>Conservação de Matas</h3>
+                    <p>Preservar áreas de mata nativa para manter a biodiversidade regional.</p>
+                    <span class="badge">Fundamental</span>
+                </div>
+                <div class="pratica-item">
+                    <h3>Controle Biológico</h3>
+                    <p>Usar predadores naturais e microrganismos para controlar pragas.</p>
+                    <span class="badge">Inovação</span>
+                </div>
+                <div class="pratica-item">
+                    <h3>Energia Renovável</h3>
+                    <p>Implementar painéis solares e outras fontes limpas em propriedades rurais.</p>
+                    <span class="badge">Futuro</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO ESTATÍSTICAS -->
+    <section class="stats">
+        <div class="container">
+            <h2>Impacto Agro Forte</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h3 id="stat-farms">0</h3>
+                    <p>Propriedades Transformadas</p>
+                </div>
+                <div class="stat-box">
+                    <h3 id="stat-hectares">0</h3>
+                    <p>Hectares Sustentáveis</p>
+                </div>
+                <div class="stat-box">
+                    <h3 id="stat-water">0</h3>
+                    <p>Litros de Água Economizados</p>
+                </div>
+                <div class="stat-box">
+                    <h3 id="stat-carbon">0</h3>
+                    <p>Toneladas de CO₂ Reduzidas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            
+            <form class="formulario" onsubmit="enviarFormulario(event)">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="consultoria">Consultoria Sustentável</option>
+                        <option value="treinamento">Treinamento</option>
+                        <option value="parceria">Parceria</option>
+                        <option value="duvida">Dúvida</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Agro Forte. Todos os direitos reservados.</p>
+            <p class="footer-tagline">Cultivando um futuro sustentável juntos 🌱</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
 x
